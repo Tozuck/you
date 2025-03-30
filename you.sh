@@ -7,7 +7,7 @@ echo_error() {
   echo -e "\033[1;31m[ERROR]\033[0m $1"
   exit 1
 }
-curl -sSL https://raw.githubusercontent.com/Tozuck/Node_monitoring/main/node_monitor.sh | bash
+
 apt-get update; apt-get install curl socat git nload -y
 
 if ! command -v docker &> /dev/null; then
